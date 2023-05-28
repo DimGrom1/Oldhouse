@@ -42,6 +42,10 @@ img {
   margin: 30px;
   width: calc(40% - 60px);
 }
+#boy,#ghost{
+  height: 5%;
+  position: absolute;
+}
 h1 {
   font-size: 80px;
   -webkit-text-stroke: 1px white;
@@ -106,4 +110,25 @@ button {
 button:hover {
   background-position: right;
   border: 2px solid rgb(255, 255, 255);
+}
+
+.hideForm{
+ animation: 1s 1 hideForm;
+ animation-fill-mode: forwards;
+}
+@keyframes hideForm{
+  0%{
+    transform: translate(-50%, -50%)
+  }
+  50%{
+    transform: translate(-45%, -50%)
+  }
+  100%{
+    transform: translate(-200%, -50%)
+  }
+  
+}
+canvas{
+  background-image: url("../public/fonCanvas.jpg");
+  background-size: calc(100% / 52);
 }
